@@ -1,0 +1,155 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    background-image: linear-gradient(to right,#351568,#351568,#4c14a7);
+}
+#header{
+    top: 0;
+    width: 100%;
+    height: 3.5rem;
+    background-attachment: fixed;
+    background-image: linear-gradient(to right,rgb(42, 34, 119),rgb(47, 37, 136),rgb(87, 79, 194));
+    position: fixed;
+    transition: 0.5s;
+}
+#tagname{
+    color: teal;
+    margin-left: .5rem;
+    font-size: 2.3rem;
+    font-family: 'Lobster', cursive;
+    text-shadow: white 1px 0;
+}
+#lander{
+    
+    width: 40%;
+    margin: auto;
+    margin-top: 5rem;
+    padding: 2rem;
+    
+}
+#main{
+    
+    width: 60%;
+    margin: auto;
+    margin-top: 5rem;
+    padding: 2rem;
+}
+#aboutMe , #work, #connect,#MyWork {
+    
+    margin-top: 4rem;
+    margin-left: 8rem;
+    margin-bottom:4rem ;
+}
+#work img{
+    height: 190px;
+    opacity: 1;
+    width:  230px;
+    
+}
+img{
+    border-radius: 15px;
+}
+#usegrid
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+.special{
+    font-size: 1.3rem;
+    color: rgb(134, 172, 164);
+}
+
+
+#aboutMe{
+    display: flex;
+    flex-direction: row;
+}
+img:hover{
+    cursor: pointer;
+}
+#newimg img{
+    height: 150px;
+    width: 250px;
+}
+#connect p{
+    color: rgb(106, 94, 163);
+    font-size: 1.2rem;
+}
+footer{
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(9, 5, 26);
+    color: rgb(122, 154, 214);
+    font-size: 1rem;
+}
+#MyWork h3{
+    color: rgb(71, 99, 151);
+    font-size: 1.8rem;
+}
+#MyWork p{
+    color: cornflowerblue;
+    font-size: 1.2rem;
+}
+#Workme{
+    display: flex;
+    flex-direction: row;
+}
+button{
+    background-color: #351568;
+    border: 4px solid rgb(134, 172, 164);
+    color: rgb(134, 172, 164);
+    width: 100px;
+    height: 55px;
+    transition: 1s;
+    font-size: 15px;
+}
+button:hover{
+    border: 6px solid rgb(155, 212, 200);
+    color: rgb(147, 211, 197);
+    cursor: pointer;
+    font-size: 25px;
+    width: 150px;
+    height: 80px;
+}
+.ultaHaat ul 
+{
+list-style: none;
+}
+.ultaHaat ul li
+{
+color: #8892B0;
+font-size: 2.5em;
+text-align: center;
+}
+.ultaHaat ul{
+    display: flex;
+    flex-direction: column;
+}
+.ultaHaat ul li:hover
+{
+cursor: pointer;
+color: #64FFDA;
+}
+.ultaHaat{
+    bottom: 0;
+    
+    position: sticky;
+    max-width: 50px;
+    left: 0;
+}
+.footDiv{
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.footDiv h5{
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
