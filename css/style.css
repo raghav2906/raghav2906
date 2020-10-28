@@ -70,7 +70,7 @@ padding: 0 2rem;
     right: 20%;
 }
 #work img{
-    height: 190px;
+    height: 150px;
     opacity: 1;
     width:  230px;
     
@@ -84,7 +84,7 @@ img{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
 }
-    .use
+.use
 {
     width: 250px;
     height: 156px;
@@ -255,9 +255,16 @@ color: #64FFDA;
         transform: translate(-50%, 0%);
         text-align: center;
     }
+    #work img{
+        height: 95px;
+        opacity: 1;
+        width:  160px;
+        
+    }
     .ultaHaat ul 
     {
         display: flex;
     }
+    #usegrid{grid-gap: 0.5em;}
 
 }
