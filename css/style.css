@@ -2,16 +2,17 @@ body{
     padding: 0;
     margin: 0;
     font-family: monospace;
-    background-image: linear-gradient(to right,#351568,#351568,#4c14a7);
+    background-image: linear-gradient(to right,#351568,#351568,#351568);
 }
 #header{
-    top: 0;
-    width: 100%;
     height: 3.5rem;
     background-attachment: fixed;
     background-image: linear-gradient(to right,rgb(42, 34, 119),rgb(47, 37, 136),rgb(87, 79, 194));
     position: fixed;
-    transition: 0.5s;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 9999;
 }
 #tagname{
     color: teal;
@@ -21,25 +22,52 @@ body{
     text-shadow: white 1px 0;
 }
 #lander{
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 25%;
+}
+/* #lander{
     
     width: 40%;
     margin: auto;
     margin-top: 5rem;
     padding: 2rem;
     
+} */
+.main
+{
+max-width: 1100px;
+margin: auto;
+overflow: auto;
+padding: 0 2rem;
 }
-#main{
-    
-    width: 60%;
-    margin: auto;
-    margin-top: 5rem;
-    padding: 2rem;
+#aboutMe
+{
+    position: absolute;
+    left: 25%;
+    top: 125%;
+    right: 10%;
+} 
+#work
+{
+    position: absolute;
+    top: 220%;
+    left: 20%;
+    right: 20%;
 }
-#aboutMe , #work, #connect,#MyWork {
+#MyWork{
+    position: absolute;
+    top: 360%;
+    left: 20%;
+    right: 20%;
+} 
+#connect{
     
-    margin-top: 4rem;
-    margin-left: 8rem;
-    margin-bottom:4rem ;
+    position: absolute;
+    top: 430%;
+    left: 20%;
+    right: 20%;
 }
 #work img{
     height: 190px;
@@ -56,6 +84,12 @@ img{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
 }
+    .use
+{
+    width: 250px;
+    height: 156px;
+}
+
 .special{
     font-size: 1.3rem;
     color: rgb(134, 172, 164);
@@ -66,19 +100,27 @@ img{
     display: flex;
     flex-direction: row;
 }
+
+.card
+{
+    display: grid;
+    background-color: #351568;
+    border: #351568;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
 img:hover{
     cursor: pointer;
 }
-#newimg img{
-    height: 150px;
-    width: 250px;
-}
+
 #connect p{
     color: rgb(106, 94, 163);
     font-size: 1.2rem;
 }
 footer{
-    bottom: 0;
+    position: absolute;
+    top: 500%;
     width: 100%;
     height: 150px;
     background-color: rgb(9, 5, 26);
@@ -124,21 +166,22 @@ color: #8892B0;
 font-size: 2.5em;
 text-align: center;
 }
-.ultaHaat ul{
+/* .ultaHaat ul{
     display: flex;
     flex-direction: column;
-}
+} */
 .ultaHaat ul li:hover
 {
 cursor: pointer;
 color: #64FFDA;
 }
 .ultaHaat{
-    bottom: 0;
     
-    position: sticky;
-    max-width: 50px;
+    position: fixed;
+    display: block;
+    top: 60%;
     left: 0;
+    z-index: 999;
 }
 .footDiv{
     bottom: 0;
@@ -152,4 +195,69 @@ color: #64FFDA;
     padding: 0;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+@media only screen and (max-width: 800px)
+{
+    #lander{
+    
+        left: 5%;
+        top: 20%;
+        position: absolute;
+        
+    }
+    #aboutMe
+    {
+        position: absolute;
+        left: 5%;
+        top: 170%;
+    }
+    .card
+    {
+        display: block;
+    }
+    #work
+    {
+        position: absolute;
+        left: 4%;
+        top: 380%;
+    }
+    #usegrid
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .use
+    {
+        width: 160px;
+        height: 100px;
+    }
+    #MyWork
+    {
+        position: absolute;
+        left: 5%;
+        top: 600%;
+    }
+    #connect
+    {
+        position: absolute;
+        left: 5%;
+        top: 680%;
+    }
+    footer
+    {
+        position: absolute;
+        top: 790%;
+    }
+    .ultaHaat
+    {
+        position: absolute;
+        top: 760%;
+        left: 45%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+    .ultaHaat ul 
+    {
+        display: flex;
+    }
+
 }
