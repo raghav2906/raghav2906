@@ -2,7 +2,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: monospace;
-    background-image: linear-gradient(to right,#351568,#351568,#351568);
+    background-image: linear-gradient(to right,#a6eaf7,#a6eaf7,#a6eaf7);
 }
 #header{
     height: 3.5rem;
@@ -25,7 +25,7 @@ body{
     position: absolute;
     left: 25%;
     right: 25%;
-    top: 25%;
+    top: 125%;
 }
 /* #lander{
     
@@ -46,26 +46,26 @@ padding: 0 2rem;
 {
     position: absolute;
     left: 25%;
-    top: 125%;
+    top: 225%;
     right: 10%;
 } 
 #work
 {
     position: absolute;
-    top: 220%;
+    top: 320%;
     left: 20%;
     right: 20%;
 }
 #MyWork{
     position: absolute;
-    top: 360%;
+    top: 460%;
     left: 20%;
     right: 20%;
 } 
 #connect{
     
     position: absolute;
-    top: 430%;
+    top: 550%;
     left: 20%;
     right: 20%;
 }
@@ -75,9 +75,9 @@ padding: 0 2rem;
     width:  230px;
     
 }
-img{
+/* .main img{
     border-radius: 15px;
-}
+} */
 #usegrid
 {
     display: grid;
@@ -92,7 +92,7 @@ img{
 
 .special{
     font-size: 1.3rem;
-    color: rgb(134, 172, 164);
+    color: rgb(34, 21, 82);
 }
 
 
@@ -101,10 +101,10 @@ img{
     flex-direction: row;
 }
 
-.card
+.cards
 {
     display: grid;
-    background-color: #351568;
+    background-color: #84def0;
     border: #351568;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
@@ -115,12 +115,12 @@ img:hover{
 }
 
 #connect p{
-    color: rgb(106, 94, 163);
+    color: rgb(42, 37, 71);
     font-size: 1.2rem;
 }
 footer{
     position: absolute;
-    top: 500%;
+    top: 630%;
     width: 100%;
     height: 150px;
     background-color: rgb(9, 5, 26);
@@ -173,13 +173,13 @@ text-align: center;
 .ultaHaat ul li:hover
 {
 cursor: pointer;
-color: #64FFDA;
+color: rgb(87, 79, 194);
 }
 .ultaHaat{
     
     position: fixed;
     display: block;
-    top: 60%;
+    top: 40%;
     left: 0;
     z-index: 999;
 }
@@ -196,12 +196,16 @@ color: #64FFDA;
     margin-top: 5px;
     margin-bottom: 5px;
 }
+#work, #MyWork, #connect{
+    
+    background-color: #84def0;
+}
 @media only screen and (max-width: 800px)
 {
     #lander{
     
         left: 5%;
-        top: 20%;
+        top: 120%;
         position: absolute;
         
     }
@@ -209,7 +213,8 @@ color: #64FFDA;
     {
         position: absolute;
         left: 5%;
-        top: 170%;
+        top: 180%;
+        flex-direction: column;
     }
     .card
     {
@@ -219,7 +224,7 @@ color: #64FFDA;
     {
         position: absolute;
         left: 4%;
-        top: 380%;
+        top: 310%;
     }
     #usegrid
     {
@@ -234,23 +239,23 @@ color: #64FFDA;
     {
         position: absolute;
         left: 5%;
-        top: 600%;
+        top: 480%;
     }
     #connect
     {
         position: absolute;
         left: 5%;
-        top: 680%;
+        top: 610%;
     }
     footer
     {
         position: absolute;
-        top: 790%;
+        top: 710%;
     }
     .ultaHaat
     {
         position: absolute;
-        top: 760%;
+        top: 690%;
         left: 45%;
         transform: translate(-50%, 0%);
         text-align: center;
@@ -259,12 +264,14 @@ color: #64FFDA;
         height: 95px;
         opacity: 1;
         width:  160px;
-        
     }
     .ultaHaat ul 
     {
         display: flex;
     }
     #usegrid{grid-gap: 0.5em;}
+    #Workme{
+        flex-direction: column;
+    }
 
 }
