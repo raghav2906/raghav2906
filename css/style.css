@@ -7,7 +7,7 @@ body{
 #header{
     height: 3.5rem;
     background-attachment: fixed;
-    background-image: linear-gradient(to right,rgb(42, 34, 119),rgb(47, 37, 136),rgb(87, 79, 194));
+    background-image: linear-gradient(to right,rgba(42, 34, 119,0.9),rgba(47, 37, 136,0.8),rgba(87, 79, 194,0.7));
     position: fixed;
     top: 0;
     transition: top 0.2s ease-in-out;
