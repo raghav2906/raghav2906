@@ -11,3 +11,20 @@ var currentScrollPos = window.pageYOffset;
 $(window).on("load", function() {
   $(".preloader").delay(1000).fadeOut(1000);
 });
+
+const nav = document.querySelector('.nav2');
+const nav3 = document.querySelector('.nav3');
+var cnt=0;
+
+nav.addEventListener('click',() => {
+  cnt++;
+  if(cnt%2 === 0){
+      nav3.classList.remove('nondi');
+      nav3.classList.add('di');
+      
+  }
+  else{
+    nav3.classList.remove('di');
+    nav3.classList.add('nondi');
+  }
+})
