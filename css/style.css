@@ -296,7 +296,7 @@ color: rgb(87, 79, 194);
     background-size: cover;
     width: 100%;
 }
-.img4 , .img5 , .img6{
+.img4 , .img5 , .img6 , .img7{
     display: none;
 }
 .img4 img{
@@ -308,6 +308,10 @@ color: rgb(87, 79, 194);
     width: 100%;
 }
 .img6 img{
+    background-size: cover;
+    width: 100%;
+}
+.img7 img{
     background-size: cover;
     width: 100%;
 }
@@ -415,6 +419,122 @@ color: rgb(87, 79, 194);
         position: absolute;
         z-index: -1;
         top: 540%;
+        width: 100%;
+        display: inline-block;
+    }
+
+}
+@media only screen and (max-width: 600px)
+{
+    #lander{
+    
+        left: 5%;
+        top: 80%;
+        position: absolute;
+        width: 90%;
+    }
+    #aboutMe
+    {
+        position: absolute;
+        left: 5%;
+        top: 150%;
+        flex-direction: column;
+        width: 90%;
+    }
+    .card
+    {
+        display: block;
+    }
+    #work
+    {
+        position: absolute;
+        left: 5%;
+        width: 90%;
+        top: 260%;
+    }
+    #usegrid
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .use
+    {
+        width: 160px;
+        height: 100px;
+    }
+    #MyWork
+    {
+        position: absolute;
+        left: 5%;
+        width: 90%;
+        top: 420%;
+    }
+    #connect
+    {
+        position: absolute;
+        left: 5%;
+        width: 90%;
+        top: 535%;
+    }
+    footer
+    {
+        position: absolute;
+        top: 615%;
+    }
+    .ultaHaat
+    {
+        position: absolute;
+        top: 605%;
+        left: 45%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+    #work img{
+        height: 95px;
+        opacity: 1;
+        width:  160px;
+    }
+    .ultaHaat ul 
+    {
+        display: flex;
+    }
+    #usegrid{grid-gap: 0.5em;}
+    #Workme{
+        flex-direction: column;
+    }
+    .img1{
+        top: 30%;
+    }
+    .img4{
+        position: absolute;
+        z-index: -1;
+        top: 110%;
+        width: 100%;
+        display: inline-block;
+    }
+    .img2{
+        top: 180%;
+    }
+    .img5{
+        position: absolute;
+        z-index: -1;
+        top: 260%;
+        width: 100%;
+        display: inline-block;
+    }
+    .img3{
+        top: 340%;
+    }
+    .img6{
+        position: absolute;
+        z-index: -1;
+        top: 410%;
+        width: 100%;
+        display: inline-block;
+    }
+    .img7{
+        position: absolute;
+        z-index: -1;
+        top: 480%;
         width: 100%;
         display: inline-block;
     }
