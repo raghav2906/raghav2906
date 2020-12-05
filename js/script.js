@@ -14,7 +14,7 @@ $(window).on("load", function() {
 
 const nav = document.querySelector('.nav2');
 const nav3 = document.querySelector('.nav3');
-var cnt=0;
+var cnt=1;
 
 nav.addEventListener('click',() => {
   cnt++;
