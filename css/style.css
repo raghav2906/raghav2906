@@ -17,18 +17,15 @@
 	border-radius: 50%;
 	opacity: .35;
 	background-color: #fff;
-	-webkit-animation: pulsing 3s infinite ease-in-out;
-	        animation: pulsing 3s infinite ease-in-out;
+	-webkit-animation: pulsing 2s infinite ease-in-out;
+	        animation: pulsing 2s infinite ease-in-out;
 }
 
 .preloader .pulse:nth-of-type(2) {
-	-webkit-animation-delay: 1s;
-	        animation-delay: 1s;
+	-webkit-animation-delay: -1s;
+	        animation-delay: -1s;
 }
-.preloader .pulse:nth-of-type(3) {
-	-webkit-animation-delay: 2s;
-	        animation-delay: 2s;
-}
+
 
 @-webkit-keyframes pulsing {
 	0%, 100% {
@@ -83,7 +80,8 @@ body{
     width: 60%;
     box-shadow: 2px 0px 2px 1px #8892B0;
     padding: 15px;
-    height: 400px
+    height: 400px;
+    background-color: #fdfdfd !important;
 }
 /* #lander{
     
@@ -159,6 +157,7 @@ padding: 0 2rem;
 #aboutMe{
     display: flex;
     flex-direction: row;
+    background-color: #fdfdfd !important;
 }
 
 .cards
@@ -262,26 +261,72 @@ color: rgb(87, 79, 194);
     margin-top: 5px;
     margin-bottom: 5px;
 }
-#work, #MyWork, #connect{
+#work, #MyWork, #connect, #aboutMe{
     
     background-color: #fdfdfd;
     box-shadow:0px 3px 3px #5f5e5e;
+}
+.img1{
+    position: absolute;
+    z-index: -1;
+    top: 90%;
+    width: 100%;
+}
+.img1 img{
+    background-size: cover;
+    width: 100%;
+}
+.img2{
+    position: absolute;
+    z-index: -1;
+    top: 300%;
+    width: 100%;
+}
+.img2 img{
+    background-size: cover;
+    width: 100%;
+}
+.img3{
+    position: absolute;
+    z-index: -1;
+    top: 500%;
+    width: 100%;
+}
+.img3 img{
+    background-size: cover;
+    width: 100%;
+}
+.img4 , .img5 , .img6{
+    display: none;
+}
+.img4 img{
+    background-size: cover;
+    width: 100%;
+}
+.img5 img{
+    background-size: cover;
+    width: 100%;
+}
+.img6 img{
+    background-size: cover;
+    width: 100%;
 }
 @media only screen and (max-width: 800px)
 {
     #lander{
     
         left: 5%;
-        top: 120%;
+        top: 80%;
         position: absolute;
-        
+        width: 90%;
     }
     #aboutMe
     {
         position: absolute;
         left: 5%;
-        top: 180%;
+        top: 150%;
         flex-direction: column;
+        width: 90%;
     }
     .card
     {
@@ -290,8 +335,9 @@ color: rgb(87, 79, 194);
     #work
     {
         position: absolute;
-        left: 4%;
-        top: 310%;
+        left: 5%;
+        width: 90%;
+        top: 260%;
     }
     #usegrid
     {
@@ -306,23 +352,25 @@ color: rgb(87, 79, 194);
     {
         position: absolute;
         left: 5%;
-        top: 480%;
+        width: 90%;
+        top: 420%;
     }
     #connect
     {
         position: absolute;
         left: 5%;
-        top: 610%;
+        width: 90%;
+        top: 535%;
     }
     footer
     {
         position: absolute;
-        top: 710%;
+        top: 615%;
     }
     .ultaHaat
     {
         position: absolute;
-        top: 690%;
+        top: 605%;
         left: 45%;
         transform: translate(-50%, 0%);
         text-align: center;
@@ -339,6 +387,36 @@ color: rgb(87, 79, 194);
     #usegrid{grid-gap: 0.5em;}
     #Workme{
         flex-direction: column;
+    }
+    .img1{
+        top: 40%;
+    }
+    .img4{
+        position: absolute;
+        z-index: -1;
+        top: 150%;
+        width: 100%;
+        display: inline-block;
+    }
+    .img2{
+        top: 260%;
+    }
+    .img5{
+        position: absolute;
+        z-index: -1;
+        top: 360%;
+        width: 100%;
+        display: inline-block;
+    }
+    .img3{
+        top: 440%;
+    }
+    .img6{
+        position: absolute;
+        z-index: -1;
+        top: 540%;
+        width: 100%;
+        display: inline-block;
     }
 
 }
