@@ -8,3 +8,6 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
+$(window).on("load", function() {
+  $(".preloader").delay(1000).fadeOut(1000);
+});
