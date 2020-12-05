@@ -491,6 +491,9 @@ color: rgb(87, 79, 194);
     .nav2{
         display: flex;
     }
+    .nav3{
+        width: 16%;
+    }
 }
 @media only screen and (max-width: 600px)
 {
@@ -613,6 +616,9 @@ color: rgb(87, 79, 194);
 
     .nav2{
         display: flex;
+    }
+    .nav3{
+        width: 16%;
     }
 
 }
