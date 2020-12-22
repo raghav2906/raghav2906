@@ -8,6 +8,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         
         <!--Bootsrap-->
+
+        <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"> -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -17,6 +21,43 @@
 
          <!--Animate On Scroll-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+          .s-container{
+    background-color: #351568;
+    position: absolute;
+    top: 340%;
+    width: 100%
+}
+.swiper-container {
+    
+    /* margin-top: 150%; */
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    /* z-index: 99999; */
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: 320px;
+    
+    margin: auto;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
+    overflow: hidden;
+    /* z-index: 99999; */
+
+  }
+  .swiper-slide img{
+       width: 100%;
+      height: 100%; 
+      /* z-index: 99999; */
+      /* background-size: cover; */
+  }
+
+      </style>
 
     </head>
     
@@ -45,7 +86,7 @@
             <a href="#MyWork">Projects</a>
             <a href="#connect">Connect</a>
         </div>
-        <div style="width: 60%;text-align: center;position: absolute;left: 20%;top: 20%;">
+        <div style="width: 60%;text-align: center;position: absolute;left: 20%;top: 15%;">
             <div id="myslideshow" class="carousel slide " data-ride="carousel">
  
                 <ol class="carousel-indicators">
@@ -104,27 +145,12 @@
             <h2 style="font-size: 2rem;color: rgb(121, 109, 158);">I like to code and this is my own webpage that tell you about me more!. </h2>
             <br>
         </div>
-        <div class="img1">
-            <img src="./img/jeremy-bishop-G9i_plbfDgk-unsplash.jpg">
-        </div>
-        <div class="img2">
-            <img src="./img/mohammad-alizade-XgeZu2jBaVI-unsplash.jpg">
-        </div>
-        <div class="img3">
-            <img src="./img/elijah-hiett-7FNutMHhBxI-unsplash.jpg">
-        </div>
-        <div class="img4">
-            <img src="./img/marco-bicca-8uT1CzGnvCk-unsplash.jpg">
-        </div>
-        <div class="img5">
-            <img src="./img/ryan-spencer-c-NEiPIxpYI-unsplash.jpg">
-        </div>
-        <div class="img6">
-            <img src="./img/shot-by-cerqueira-0o_GEzyargo-unsplash.jpg">
-        </div>
-        <div class="img7">
-            <img src="./img/andy-holmes-LUpDjlJv4_c-unsplash.jpg">
-        </div>
+        <div class="bg1"></div>
+        <div class="bg2"></div>
+        <div class="bg3"></div>
+        <div class="bg4"></div>
+        <div class="bg5"></div>
+        <div class="bg6"><img src="vincent-burkhead-LhlxYMfnTF0-unsplash.jpg"><img src="vincent-burkhead-LhlxYMfnTF0-unsplash.jpg"><img src="vincent-burkhead-LhlxYMfnTF0-unsplash.jpg"></div>
         <div class="main">
             <div id="aboutMe" class="cards" data-aos="fade-up">
                 <div >
@@ -228,6 +254,24 @@
                 <li> |</li>
             </ul>
         </div>
+        <div class="s-container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/IMG-20190922-WA0029.jpg"></div>
+              <div class="swiper-slide"><img src="img/IMG-20191126-WA0021.jpg"></div>
+              <div class="swiper-slide"><img src="img/IMG-20200203-WA0000.jpg"></div>
+              <div class="swiper-slide"><img src="img/IMG-20200215-WA0003.jpg"></div>
+              <div class="swiper-slide"><img src="img/IMG-20200217-WA0021.jpg"></div>
+              <div class="swiper-slide"><img src="img/IMG-20200220-WA0026.jpg"></div>
+              <div class="swiper-slide"><img src="img/image1.jpg"></div>
+              <div class="swiper-slide"><img src="img/image1.jpg"></div>
+              <div class="swiper-slide"><img src="img/image1.jpg"></div>
+              <div class="swiper-slide"><img src="img/image1.jpg"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
         <footer >
             <div class="footDiv">
                 <h5>Designed and Built By :</h5>
@@ -237,6 +281,33 @@
             </div>
             
         </footer>
+        <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+          
+          <!-- <script src="/Untitled-1.js"></script> -->
+          <script type="module">
+            import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+          
+            const swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop:true,
+      autoplay:{
+          delay:2500,
+          disableOnIteraction : false
+      }
+    })
+          </script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init({
@@ -245,6 +316,9 @@
             });
             
           </script>
+        
+        
+
         <script src="js/script.js"></script>
        
     </body>
