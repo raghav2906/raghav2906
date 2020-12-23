@@ -466,14 +466,17 @@ color: rgb(87, 79, 194);
         text-align: center;
     }
     #work img{
-        height: 55px;
+        height: 80%;
         opacity: 1;
-        width:  60px;
+        width:  65%;
+        transition: 0.5s;
+        
     }
     #work img:hover{
-        height: 65px;
-        opacity: 1;
-        width:  80px;
+        height: 84%;
+        opacity:1;
+        width:  67%;
+        
     }
     .ultaHaat ul 
     {
@@ -601,14 +604,14 @@ color: rgb(87, 79, 194);
         text-align: center;
     }
     #work img{
-        height: 55px;
+        height: 100%;
         opacity: 1;
-        width:  60px;
+        width:  60%;
     }
     #work img:hover{
-        height: 65px;
+        height: 110%;
         opacity: 1;
-        width:  80px;
+        width:  65%;
     }
     .ultaHaat ul 
     {
