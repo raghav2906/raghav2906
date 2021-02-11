@@ -9,7 +9,7 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 $(window).on("load", function() {
-  $(".preloader").delay(100).fadeOut(500);
+  $(".preloader").delay(100).fadeOut(100);
 });
 
 const nav = document.querySelector('.nav2');
