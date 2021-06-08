@@ -1,321 +1,512 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raghav</title>
-    <link rel="icon" href="https://image.flaticon.com/icons/png/512/3157/3157542.png">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://allfont.net/allfont.css?fonts=comic-sans-ms" rel="stylesheet" type="text/css" />
-</head>
-<body style="z-index: 3;">
-    <div id="BigImg">
-        <img id="BigImgsrc" src="" >
-    </div>
-    <div style="display: flex;flex-direction: row;z-index: -1;position: fixed;top: 15%;">
-        <div class="glowing">
-            <span style="--i:1;"></span>
-            <span style="--i:2;"></span>
-            <span style="--i:3;"></span>
-        </div>
-        <div class="glowing" >
-            <span style="--i:1;"></span>
-            <span style="--i:2;"></span>
-            <span style="--i:3;"></span>
-        </div>
-        <div class="glowing">
-            <span style="--i:1;"></span>
-            <span style="--i:2;"></span>
-            <span style="--i:3;"></span>
-        </div>
-        <div class="glowing">
-            <span style="--i:1;"></span>
-            <span style="--i:2;"></span>
-            <span style="--i:3;"></span>
-        </div>
-    </div>
-    <div id="header" class="navbar">
-            <h1>Raghav</h1>
-    </div>
-    <div class="heading" id="headi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>raghav2906</title>
+        <link rel="icon" href="https://wallpapercave.com/wp/wp1908420.png">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        
+        <!--Bootsrap-->
 
-        <div class="starting-info">
-            <h1 id="focus">About Me</h1>
-            <h3 id="focus2">It's GENTLE GIANT - "Raghav Agarwal"</h3>
-            <p id="focus3">I love to code and this is my own webpage that tell you about me and my work more!.</p>
+        <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"> -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+         <!--Animate On Scroll-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+          
+.swiper-container {
+    
+    /* margin-top: 150%; */
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    /* z-index: 99999; */
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: 320px;
+    
+    margin: auto;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
+    overflow: hidden;
+    /* z-index: 99999; */
+
+  }
+  .swiper-slide img{
+       width: 100%;
+      height: 100%; 
+      /* z-index: 99999; */
+      /* background-size: cover; */
+  }
+
+      </style>
+
+    </head>
+    
+    <body>
+        <div class="preloader">
+            <div class="pulse"></div>
+            <div class="pulse"></div>
         </div>
-    </div>
-    <div class="circle-roll">
-        <footer></footer>
-    </div>
-    <div class="info">
-        <div class="container">
-            <div class="card" data-aos="flip-right">
-                <div class="box">
-                    <div class="content">
-                        <h2>01</h2>
-                        <h3>Small intro</h3>
-                        <p>Hi! I am Raghav Agarwal , and i am an Computer Science Engineer(CSE) undergraduate at NIT Kurukshetra (batch -2K19 ). Loves to code .</p>
+        <div id="header">
+            <span id="tagname">RAGhAV</span>
+            <span class="nav1">
+                <a href="#aboutMe">About Me</a>
+                <a href="#work">Portfolio</a>
+                <a href="#MyWork">Projects</a>
+                <a href="#connect">Connect</a>
+            </span>
+            <span class="nav2">
+                <p></p>
+                <p></p>
+                <p></p>
+            </span>
+        </div>
+        <div class="nav3 nondi">
+            <a href="#aboutMe">About Me</a>
+            <a href="#work">Portfolio</a>
+            <a href="#MyWork">Projects</a>
+            <a href="#connect">Connect</a>
+        </div>
+        <div style="width: 60%;text-align: center;position: absolute;left: 20%;top: 15%;">
+            <div id="myslideshow" class="carousel slide " data-ride="carousel" data-interval="3000">
+ 
+                <ol class="carousel-indicators">
+                    <li class="active" data-target="#myslideshow" data-slide-to="0"></li>
+                    <li  data-target="#myslideshow" data-slide-to="1"></li>
+                    <li  data-target="#myslideshow" data-slide-to="2"></li>
+                    <li  data-target="#myslideshow" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#aboutMe"><img src="img/image1.jpg" class="d-block w-100"></a>
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h3 style="color: rgb(209, 235, 240);">Let's Get Started</h3>
+                            <p>About Me</p>
+                        </div>
                     </div>
+                    <div class="carousel-item">
+                        <a href="#work"><img src="img/image2.jpg" class="d-block w-100"></a>
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h3 style="color: rgb(209, 235, 240);">Want to know my area of interest</h3>
+                            <p>Then give it a try dude!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#MyWork"><img src="img/image3.jpg" class="d-block w-100"></a>
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h3 style="color: rgb(209, 235, 240);">You can see some of my mini-projects</h3>
+                            <p>So... What are you waiting for !!</p>
+                        </div>
+                    </div> 
+                    <div class="carousel-item">
+                        <a href="#connect"><img src="img/image4.jpg" class="d-block w-100"></a>
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h4 style="color: rgb(209, 235, 240);">Eager to connect with me</h4>
+                            <p>Don't Spam😂😎😎</p>
+                        </div>
+                    </div>
+
+                </div>
+                <a href="#myslideshow" class="carousel-control-prev" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a href="#myslideshow" class="carousel-control-next" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div id="lander">
+            <h4 style="color: #2c3970;text-shadow: white 1px 0;font-weight: bold;">It's Your GENTLE GIANT </h4>
+            <br>
+            <h2 style="color: #40a1da;text-shadow: white 2px 1px;">Raghav Agarwal</h2>
+            <br>
+
+            <h4 style="color: rgb(121, 109, 158);">I like to code and this is my own webpage that tell you about me more!. </h4>
+            <br>
+        </div>
+        <div class="bg1"><img src='img/goku.jfif' height="100%" style="opacity: .12;max-width: 80%;"></div>
+        <div class="bg2"><img src='img/goku2.jfif' height="100%" style="opacity: .12;max-width: 80%;"></div>
+        <div class="bg3"><img src='img/goku3.jfif' height="100%" width="30%" style="opacity: .12;"></div>
+        <div class="bg4"><img src='img/goku4.jfif' height="30%" width="30%" style ="opacity: .12;"><br/><img src='img/goku6.jfif' height="30%" width="30%" style="opacity: .12;"><br/><img src='img/goku5.jfif' height="40%" width="30%" style="opacity: .12;"></div>
+        <div class="bg5"><img src='img/goku7.jfif' height="100%" width="25%" style="opacity: .15;"></div>
+        <div class="bg6"><img src="https://images.unsplash.com/photo-1446729444801-31245ddba81a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" width="100%"><img src="https://images.unsplash.com/photo-1446729444801-31245ddba81a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" width="100%"><img src="https://images.unsplash.com/photo-1446729444801-31245ddba81a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" width="100%"></div>
+        <div class="main">
+            <div id="aboutMe" class="cards" data-aos="fade-up">
+                <div >
+                    <h3 style="font-size: 1.8rem;color: rgb(15, 17, 133);">About Me</h3>
+                    <span style="text-decoration:#8892B0 line-through ;"><pre>                               </pre></span>
+                    <p style="font-size: 1rem; color: rgb(61, 55, 82);">Hi! I am <span class="special" >Raghav Agarwal</span> , and i am an Computer Science Engineer(CSE) undergraduate at <span class="special">NIT Kurukshetra.</span></p>
+                    <p style="font-size: 1rem;color: rgb(84, 77, 109);">I Like personally more like to compete in <span class="special">competetitive programming</span> than making things for Web Devs.</p>
+                    <p style="font-size: 1rem;color: rgb(84, 77, 109);">This doesn't shows that I'm not familiar with Making Websites. I can Design and provide a framework to a website like <span class="special">Full Stack Developer.</span> </p>
+                    <p style="font-size: 1rem;color:  rgb(84, 77, 109);">I'll show you my works at the end.</p>
+                    <p style="font-size: 1rem;color:  rgb(84, 77, 109);">I also participate in competetitive programming on <span class="special">Codechef</span> with <a href="https://www.codechef.com/users/ragh_coder" style="text-decoration: none;" target="_blank"><span  style="background-color: rgb(39, 33, 94); font-size: 1.3rem;">ragh_coder</span></a> handle. I am currently <span class="special">'4'</span> ✨ Star coder according to codechef ratings.</p>
+                </div>
+                <div id="aboutmeimg">
+                    <img src="img/raghav.jpeg" width="200px" height="250px">
+                    <span class="img-overlay"></span>
                 </div>
             </div>
-            <div class="card" data-aos="flip-left">
-                <div class="box">
-                    <div class="content">
-                        <h2>02</h2>
-                        <h3>My interests</h3>
-                        <p>I like to do CP (competitve programming) and web development . Also intersted in Machine learning . I can Design and provide a framework to a website like Full Stack Developer. </p>
+            <br>
+            <br>
+
+            <div id="work" data-aos="fade-up">
+                <h3 style="font-size: 1.8rem;color: rgb(15, 17, 133);">have a knowledge of ...</h3>
+                <span style="text-decoration:#8892B0 line-through ;"><pre>                               </pre></span> 
+                <div id="usegrid">
+                    <div>
+                       <img width="10%" height="10%" src="img/html.jpg" alt="" class="use" onclick="window.location.href='https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5' ;" >
+                       <span class="use-overlay" onclick="window.location.href='https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5' ;"></span>
+                    </div>
+                   <div>
+                       <img src="img/css.jpg" alt="" class="use" >
+                       <span class="use-overlay" onclick="window.location.href='https://devdocs.io/css/' ;"></span>
+                    </div>
+                   <div>
+                       <img src="img/js.jpg" alt="" class="use" >
+                       <span class="use-overlay" onclick="window.location.href='https://documentation.js.org/' ;"></span>
+                       </div>
+                   <div>
+                       <img src="img/bootstrap.jpg" alt="" class="use" >
+                       <span class="use-overlay" onclick="window.location.href='https://getbootstrap.com/' ;"></span>
+                   </div>
+                   <div>
+                       <img src="img/react.jpg" alt="" class="use" >
+                       <span class="use-overlay" onclick="window.location.href='https://reactjs.org/' ;"></span>
+                       </div>
+                   <div>
+                       <img src="img/cpp.jpg" alt="" class="use" >
+                       <span class="use-overlay" onclick="window.location.href='https://www.geeksforgeeks.org/c-language-set-1-introduction/' ;"></span>
+                    </div>
+                   <div>
+                       <img src="img/python.jpg" alt="" class="use" >
+                       <span class="use-overlay" onclick="window.location.href='https://www.python.org/' ;"></span>
+                    </div>
+                    <div >
+                        <img src="img/cppp.png" alt="" class="use" >
+                        <span class="use-overlay" onclick="window.location.href='https://www.programiz.com/cpp-programming' ;"></span>
+                     </div>
+                     <div >
+                        <img src="img/node.png" alt="" class="use" >
+                        <span class="use-overlay" onclick="window.location.href='https://nodejs.org/en/' ;"></span>
+                     </div>
+                     <div>
+                        <img src="img/java-25-226002.png" alt="" class="use" >
+                        <span class="use-overlay" onclick="window.location.href='https://www.oracle.com/java/technologies/' ;"></span>
+                     </div>
+                     <div >
+                         <img src="img/download.png" alt="" class="use" >
+                         <span class="use-overlay" onclick="window.location.href='https://www.mysql.com/' ;"></span>
+                      </div>
+                      <div >
+                         <img src="img/download (1).png" alt="" class="use" >
+                         <span class="use-overlay" onclick="window.location.href='https://git-scm.com/' ;"></span>
+                      </div>
+               </div>
+               
+            </div>
+            <div id="MyWork" data-aos="fade-up">
+                <h3 style="color: rgb(15, 17, 133);">Here are the some snapShots of some of my website created using Node.js</h3>
+                <span style="text-decoration:#8892B0 line-through ;"><pre>                               </pre></span><br><br><br><br><br><br>
+                <div id="Workme">
+                    <div style="width: 100%;">
+                        <p>1. Weather App</p>
+                        <img src="img/weather.png" alt="">
+                        <div>
+                            <div id="workslideshow" class="carousel slide workimg" data-ride="carousel"  data-interval="3000">
+ 
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-target="#workslideshow" data-slide-to="0"></li>
+                                    <li  data-target="#workslideshow" data-slide-to="1"></li>
+                                    <li  data-target="#workslideshow" data-slide-to="2"></li>
+                                    <li  data-target="#workslideshow" data-slide-to="3"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                
+                                        <div class="imgdiv">
+                                        <img src="img/New folder (4)/Screenshot 2020-12-23 164315.png" class="d-block w-100"></div>
+                                    </div>
+                                    <div class="carousel-item">
+      
+                                        <div class="imgdiv">
+                                        <img src="img/New folder (4)/Screenshot 2020-12-23 164425.png" class="d-block w-100"></div>
+                                    </div>
+                                    <div class="carousel-item">
+      
+                                        <div class="imgdiv">
+                                        <img src="img/New folder (4)/Screenshot 2020-12-23 164359.png" class="d-block w-100"></div>
+                                    </div> 
+                                    <div class="carousel-item">
+      
+                                        <div class="imgdiv">
+                                        <img src="img/New folder (4)/Screenshot 2020-12-23 164331.png" class="d-block w-100"></div>
+                                    </div>
+                                </div>
+                                <a href="#workslideshow" class="carousel-control-prev" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a href="#workslideshow" class="carousel-control-next" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 100%;">
+                        <p>2. chat App</p>
+                        <img src="img/chat.png" alt="">
+                        <div>
+                            <div id="workslideshow2" class="carousel slide workimg" data-ride="carousel"  data-interval="3000">
+ 
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-target="#workslideshow2" data-slide-to="0"></li>
+                                    <li  data-target="#workslideshow2" data-slide-to="1"></li>
+                                    <li  data-target="#workslideshow2" data-slide-to="2"></li>
+                                    <li  data-target="#workslideshow2" data-slide-to="3"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                
+                                        <div class="imgdiv">
+                                        <img src="img/New folder (3)/Screenshot 2020-12-23 163640.png" class="d-block w-100"></div>
+                                    </div>
+                                    <div class="carousel-item">
+      
+                                        <div class="imgdiv">
+                                        <img src="img/New folder (3)/Screenshot 2020-12-23 164217.png" class="d-block w-100"></div>
+                                    </div>
+                                    <div class="carousel-item">
+      
+                                        <div class="imgdiv">
+                                        <img src="img/New folder (3)/Screenshot 2020-12-23 164110.png" class="d-block w-100"></div>
+                                    </div> 
+                                    <div class="carousel-item">
+      
+                                        <div class="imgdiv">
+                                        <img src="img/New folder (3)/Screenshot 2020-12-23 163831.png" class="d-block w-100"></div>
+                                    </div>
+                                </div>
+                                <a href="#workslideshow2" class="carousel-control-prev" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a href="#workslideshow2" class="carousel-control-next" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 100%;">
+                        <p>3. Agro App</p>
+                        <img src="https://wallpapercave.com/wp/wp1908420.png" width="15%" height="15%" alt="">                        <div>
+                            <div id="workslideshow3" class="carousel slide workimg" data-ride="carousel"  data-interval="3000">
+ 
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-target="#workslideshow3" data-slide-to="0"></li>
+                                    <li  data-target="#workslideshow3" data-slide-to="1"></li>
+                                    <li  data-target="#workslideshow3" data-slide-to="2"></li>
+                                    <li  data-target="#workslideshow3" data-slide-to="3"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                
+                                        <div class="imgdiv">
+                                        <img src="img/New folder (2)/Screenshot 2020-12-23 163414.png" class="d-block w-100"></div>
+                                    </div>
+                                    <div class="carousel-item">
+      
+                                        <div class="imgdiv">
+                                        <img src="img/New folder (2)/Screenshot 2020-12-23 163456.png" class="d-block w-100"></div>
+                                    </div>
+                                    <div class="carousel-item">
+      
+                                        <div class="imgdiv">
+                                        <img src="img/New folder (2)/Screenshot 2020-12-23 163518.png" class="d-block w-100"></div>
+                                    </div> 
+                                    <div class="carousel-item">
+      
+                                        <div class="imgdiv">
+                                        <img src="img/New folder (2)/Screenshot 2020-12-23 163607.png" class="d-block w-100"></div>
+                                    </div>
+                                </div>
+                                <a href="#workslideshow3" class="carousel-control-prev" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a href="#workslideshow3" class="carousel-control-next" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div><div style="width: 100%;">
+                        <p>4. Insta Clone</p>
+                        <img src="https://i.pinimg.com/originals/c8/7a/73/c87a734ced5a6e7613d9ac9644864ae4.jpg" width="15%" height="15%" alt="">
+                        <div>
+                            <div id="workslideshow4" class="carousel slide workimg" data-ride="carousel"  data-interval="3000">
+ 
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-target="#workslideshow4" data-slide-to="0"></li>
+                                    <li  data-target="#workslideshow4" data-slide-to="1"></li>
+                                    <li  data-target="#workslideshow4" data-slide-to="2"></li>
+                                    <li  data-target="#workslideshow4" data-slide-to="3"></li>
+                                    <li  data-target="#workslideshow4" data-slide-to="4"></li>
+                                    <li  data-target="#workslideshow4" data-slide-to="5"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                
+                                        <div class="imgdiv">
+                                        <img src="img/New folder/Screenshot 2020-12-23 163106.png" class="d-block w-100">
+   </div>                                 </div>
+                                    <div class="carousel-item">
+      
+                                        <div class="imgdiv">
+                                        <img src="img/New folder/Screenshot 2020-12-23 163150.png" class="d-block w-100">
+   </div>                                 </div>
+                                    <div class="carousel-item">
+      
+                                        <div class="imgdiv">
+                                        <img src="img/New folder/Screenshot 2020-12-23 163213.png" class="d-block w-100">
+   </div>                                 </div> 
+                                    <div class="carousel-item">
+      
+                                        <div class="imgdiv">
+                                        <img src="img/New folder/Screenshot 2020-12-23 163251.png" class="d-block w-100">
+   </div>                                 </div>
+                                    <div class="carousel-item">
+      
+                                        <div class="imgdiv">
+                                        <img src="img/New folder/Screenshot 2020-12-23 163319.png" class="d-block w-100">
+   </div>                                 </div> 
+                                    <div class="carousel-item">
+      
+                                        <div class="imgdiv">
+                                        <img src="img/New folder/Screenshot 2020-12-23 163349.png" class="d-block w-100">
+   </div>                                 </div>
+                                </div>
+                                <a href="#workslideshow4" class="carousel-control-prev" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a href="#workslideshow4" class="carousel-control-next" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <br><br><br><br><br><br>
             </div>
-            <div class="card" data-aos="flip-up">
-                <div class="box">
-                    <div class="content">
-                        <h2>03</h2>
-                        <h3>Some More</h3>
-                        <p>I have created some projects using MERN stack and i'll share snaps of my work with you through this portfolio. With username "ragh_coder" you can find me on codechef and codeforce related to CP.</p>
-                    </div>
-                </div>
+            <div id="connect" data-aos="fade-up" >
+                <h3 style="font-size: 1.8rem;color:rgb(15, 17, 133);">Want to connect with me ...</h3>
+                <span style="text-decoration:#8892B0 line-through ;"><pre>                               </pre></span><br><br><br><br><br><br>
+                <p>you can send me mail </p>
+                <button onclick="location.href='mailto:raghav.agarwalqw77@gmail.com'">Mail Me!</button>
+                <p>You can mail me your queries and questions about counselling purpose for jee Mains and Jee Advanced. </p>
+                <p>I'll try to give response for everyone</p>
             </div>
-        </div>
-    </div>
-    <div class="mapic">
-        <div class="actualpic" data-aos="zoom-out-down">
-            <img src="mypic.jpg" onclick="OnClickFun('mypic.jpg')">
-        </div>
-        <div class="virtualpic" onclick="OnClickFun('mypic.jpg')" data-aos="zoom-out-down">
+            
             
         </div>
-        <div class="newtopic" data-aos="fade-left">
-             Here Are some of the things i Know
+        <div class="ultaHaat">
+            <ul>
+                <li onclick="window.location.href='https://www.instagram.com/agrwlraghav/' ;"><i class="fa fa-instagram"></i> </li>
+                <li> |</li>
+                <li onclick="window.location.href='https://github.com/raghav2906';"><i class="fa fa-github"></i></li>
+                <li> |</li>
+                <li onclick="window.location.href='https://api.whatsapp.com/send?phone=919461233288';"><i class="fa fa-whatsapp"></i></li>
+                <li> |</li>
+                <li onclick="window.location.href='tel:+919352159265'"><i class="fa fa-phone"></i></li>
+                <li> |</li>
+            </ul>
         </div>
-    </div>
-    <div class="portfolio" data-aos="zoom-out-left">
-        <div class="inner-port" data-aos="zoom-out-down">
-            <div class="icons">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <div class="icon"><img onclick="window.location.href='https://www.programiz.com/c-programming' ;" src="./img/c.png"></div>
+        <div class="s-container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/IMG-20190922-WA0029.jpg"></div>
+              <div class="swiper-slide"><img src="img/Snapchat-539502599.jpg"></div>
+              <div class="swiper-slide"><img src="img/IMG-20200203-WA0000.jpg"></div>
+              <div class="swiper-slide"><img src="img/IMG-20200215-WA0003.jpg"></div>
+              <div class="swiper-slide"><img src="img/Snapchat-515907178.jpg"></div>
+              <div class="swiper-slide"><img src="img/IMG-20200220-WA0026.jpg"></div>
+              <div class="swiper-slide"><img src="img/IMG_20201206_191904.jpg"></div>
+              <div class="swiper-slide"><img src="img/IMG_20201206_192048.jpg"></div>
+              <div class="swiper-slide"><img src="img/IMG_20201027_203709.jpg"></div>
+              <div class="swiper-slide"><img src="img/Snapchat-1679589151.jpg"></div>
             </div>
-            <div class="icons">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <div class="icon"><img onclick="window.location.href='https://www.python.org/' ;" src="./img/python.png"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <footer >
+            <div class="footDiv">
+                <h5>Designed and Built By :</h5>
+                <h5 style="color: #4ee2c9;">Raghav Agarwal</h5>
+                <h5>Contact : (+91)9352159265</h5>
+                <h5>Email : raghav.agarwalqw77@gmail.com</h5>
             </div>
-            <div class="icons">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <div class="icon"><img onclick="window.location.href='https://reactjs.org/' ;" src="./img/react.jpg"></div>
-            </div>
-        </div>
-        <div class="inner-port" data-aos="zoom-out-down">
-            <div class="icons">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <div class="icon"><img onclick="window.location.href='https://nodejs.org/en/' ;" src="./img/node-js.png"></div>
-            </div>
-            <div class="icons">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <div class="icon"><img onclick="window.location.href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' ;" src="./img/js.jpg"></div>
-            </div>
-            <div class="icons">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <div class="icon"><img onclick="window.location.href='https://www.w3schools.com/html/' ;" src="./img/html.jpg"></div>
-            </div>
-        </div>
-        <div class="inner-port" data-aos="zoom-out-down">
-            <div class="icons">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <div class="icon"><img onclick="window.location.href='https://www.w3schools.com/css/' ;" src="./img/css.jpg"></div>
-            </div>
-            <div class="icons">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <div class="icon"><img onclick="window.location.href='https://getbootstrap.com/' ;" src="./img/bootstrap.jpg"></div>
-            </div>
-            <div class="icons">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <div class="icon"><img onclick="window.location.href='https://www.programiz.com/cpp-programming' ;" src="./img/cppp.png"></div>
-            </div>
-        </div>
-        <div class="inner-port" data-aos="zoom-out-down">
-            <div class="icons">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <div class="icon"><img onclick="window.location.href='https://www.programiz.com/java-programming' ;" src="./img/java-25-226002.png"></div>
-            </div>
-            <div class="icons">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <div class="icon"><img onclick="window.location.href='https://git-scm.com/' ;" src="./img/git.png"></div>
-            </div>
-            <div class="icons">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <div class="icon"><img onclick="window.location.href='https://www.mysql.com/' ;" src="./img/MySql.png"></div>
-            </div>
-        </div>
-        <div class="inner-port" data-aos="zoom-out-down">
-            <div class="icons">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <div class="icon"><img onclick="window.location.href='https://www.mongodb.com/' ;" src="./img/mongoDB.png"></div>
-            </div>
-            <!-- <div class="icons">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <div class="icon"><img src="./img/git.png"></div>
-            </div>
-            <div class="icons">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <div class="icon"><img src="./img/MySql.png"></div>
-            </div> -->
-        </div>
-    </div>
-    <div class="project-header" data-aos="fade-left"
-    data-aos-offset="500"
-    data-aos-duration="500">
-        <h1>Here Are Some Of My Works!</h1>
-    </div>
-    <div class="project project1" data-aos="fade-up" data-aos-easing="ease-in-sine">
-        <div class="box1">
-            <span><h1> 01. </h1> <h2>Insta Clone</h2> </span>
-        </div>
-        <div class="box2">
-            <span class="inner-box2" style="--i:1;" onclick="OnClickFun('img/pro1/1.png')"><span></span><span></span><span></span><span></span><img src="img/pro1/1.png"></span>
-            <span class="inner-box2" style="--i:2;" onclick="OnClickFun('img/pro1/2.png')"><span></span><span></span><span></span><span></span><img src="img/pro1/2.png"></span>
-            <span class="inner-box2" style="--i:3;" onclick="OnClickFun('img/pro1/3.png')"><span></span><span></span><span></span><span></span><img src="img/pro1/3.png"></span>
-            <span class="inner-box2" style="--i:4;" onclick="OnClickFun('img/pro1/4.png')"><span></span><span></span><span></span><span></span><img src="img/pro1/4.png"></span>
-            <span class="inner-box2" style="--i:5;" onclick="OnClickFun('img/pro1/5.png')"><span></span><span></span><span></span><span></span><img src="img/pro1/5.png"></span>
-            <span class="inner-box2" style="--i:6;" onclick="OnClickFun('img/pro1/6.png')"><span></span><span></span><span></span><span></span><img src="img/pro1/6.png"></span>
-            <!-- <span class="inner-box2" style="--i:7;" onclick="OnClickFun('mypic.jpg')"><span></span><span></span><span></span><span></span><img src="img/python.jpg"></span>
-            <span class="inner-box2" style="--i:8;" onclick="OnClickFun('mypic.jpg')"><span></span><span></span><span></span><span></span><img src="img/react.jpg"></span> -->
-        </div>
-    </div>
-    <div class="project project2" data-aos="zoom-out-left"    data-aos-easing="linear"    data-aos-duration="600">
-        <div class="box1">
-            <span><h1> 02. </h1> <h2>Blog App</h2> </span>
-        </div>
-        <div class="box2">
-            <span class="inner-box2" style="--i:1;" onclick="OnClickFun('img/pro2/1.png')"><span></span><span></span><span></span><span></span><img src="img/pro2/1.png"></span>
-            <span class="inner-box2" style="--i:2;" onclick="OnClickFun('img/pro2/2.png')"><span></span><span></span><span></span><span></span><img src="img/pro2/2.png"></span>
-            <span class="inner-box2" style="--i:3;" onclick="OnClickFun('img/pro2/3.png')"><span></span><span></span><span></span><span></span><img src="img/pro2/3.png"></span>
-            <span class="inner-box2" style="--i:4;" onclick="OnClickFun('img/pro2/4.png')"><span></span><span></span><span></span><span></span><img src="img/pro2/4.png"></span>
-            <span class="inner-box2" style="--i:5;" onclick="OnClickFun('img/pro2/5.png')"><span></span><span></span><span></span><span></span><img src="img/pro2/5.png"></span>
-            <span class="inner-box2" style="--i:6;" onclick="OnClickFun('img/pro2/6.png')"><span></span><span></span><span></span><span></span><img src="img/pro2/6.png"></span>
-            <!-- <span class="inner-box2" style="--i:7;" onclick="OnClickFun('mypic.jpg')"><span></span><span></span><span></span><span></span><img src="img/python.jpg"></span>
-            <span class="inner-box2" style="--i:8;" onclick="OnClickFun('mypic.jpg')"><span></span><span></span><span></span><span></span><img src="img/react.jpg"></span> -->
-        </div>
-    </div>
-    <div class="project project3" data-aos="zoom-out-left"    data-aos-easing="linear"    data-aos-duration="600">
-        <div class="box1">
-            <span><h1> 03. </h1> <h2>Song Hovers App</h2> </span>
-        </div>
-        <div class="box2">
-            <span class="inner-box2" style="--i:1;" onclick="OnClickFun('img/pro3/1.png')"><span></span><span></span><span></span><span></span><img src="img/pro3/1.png"></span>
-            <span class="inner-box2" style="--i:2;" onclick="OnClickFun('img/pro3/2.png')"><span></span><span></span><span></span><span></span><img src="img/pro3/2.png"></span>
-            <span class="inner-box2" style="--i:3;" onclick="OnClickFun('img/pro3/3.png')"><span></span><span></span><span></span><span></span><img src="img/pro3/3.png"></span>
-            <span class="inner-box2" style="--i:4;" onclick="OnClickFun('img/pro3/4.png')"><span></span><span></span><span></span><span></span><img src="img/pro3/4.png"></span>
-            <span class="inner-box2" style="--i:5;" onclick="OnClickFun('img/pro3/5.png')"><span></span><span></span><span></span><span></span><img src="img/pro3/5.png"></span>
-            <span class="inner-box2" style="--i:6;" onclick="OnClickFun('img/pro3/6.png')"><span></span><span></span><span></span><span></span><img src="img/pro3/6.png"></span>
-            <!-- <span class="inner-box2" style="--i:7;" onclick="OnClickFun('mypic.jpg')"><span></span><span></span><span></span><span></span><img src="img/python.jpg"></span>
-            <span class="inner-box2" style="--i:8;" onclick="OnClickFun('mypic.jpg')"><span></span><span></span><span></span><span></span><img src="img/react.jpg"></span> -->
-        </div>
-    </div>
-    <div class="project project4" data-aos="zoom-out-down"    data-aos-easing="linear"    data-aos-duration="600">
-        <div class="box1">
-            <span><h1> 04. </h1> <h2>Chat App</h2> </span>
-        </div>
-        <div class="box2">
-            <span class="inner-box2" style="--i:1;" onclick="OnClickFun('img/pro4/1.png')"><span></span><span></span><span></span><span></span><img src="img/pro4/1.png"></span>
-            <span class="inner-box2" style="--i:2;" onclick="OnClickFun('img/pro4/2.png')"><span></span><span></span><span></span><span></span><img src="img/pro4/2.png"></span>
-            <span class="inner-box2" style="--i:3;" onclick="OnClickFun('img/pro4/3.png')"><span></span><span></span><span></span><span></span><img src="img/pro4/3.png"></span>
-            <span class="inner-box2" style="--i:4;" onclick="OnClickFun('img/pro4/4.png')"><span></span><span></span><span></span><span></span><img src="img/pro4/4.png"></span>
-            <span class="inner-box2" style="--i:5;" onclick="OnClickFun('img/pro4/5.png')"><span></span><span></span><span></span><span></span><img src="img/pro4/5.png"></span>
-            <span class="inner-box2" style="--i:6;" onclick="OnClickFun('img/pro4/6.png')"><span></span><span></span><span></span><span></span><img src="img/pro4/6.png"></span>
-            <!-- <span class="inner-box2" style="--i:7;" onclick="OnClickFun('mypic.jpg')"><span></span><span></span><span></span><span></span><img src="img/python.jpg"></span>
-            <span class="inner-box2" style="--i:8;" onclick="OnClickFun('mypic.jpg')"><span></span><span></span><span></span><span></span><img src="img/react.jpg"></span> -->
-        </div>
-    </div>
-    <div class="project project5" data-aos="fade-up"    data-aos-easing="linear"    data-aos-duration="600">
-        <div class="box1">
-            <span><h1> 05. </h1> <h2>Weather App</h2> </span>
-        </div>
-        <div class="box2">
-            <span class="inner-box2" style="--i:1;" onclick="OnClickFun('img/pro5/1.png')"><span></span><span></span><span></span><span></span><img src="img/pro5/1.png"></span>
-            <span class="inner-box2" style="--i:2;" onclick="OnClickFun('img/pro5/2.png')"><span></span><span></span><span></span><span></span><img src="img/pro5/2.png"></span>
-            <span class="inner-box2" style="--i:3;" onclick="OnClickFun('img/pro5/3.png')"><span></span><span></span><span></span><span></span><img src="img/pro5/3.png"></span>
-            <span class="inner-box2" style="--i:4;" onclick="OnClickFun('img/pro5/4.png')"><span></span><span></span><span></span><span></span><img src="img/pro5/4.png"></span>
-            <span class="inner-box2" style="--i:5;" onclick="OnClickFun('img/pro5/5.png')"><span></span><span></span><span></span><span></span><img src="img/pro5/5.png"></span>
-            <span class="inner-box2" style="--i:6;" onclick="OnClickFun('img/pro5/6.png')"><span></span><span></span><span></span><span></span><img src="img/pro5/6.png"></span>
-            <!-- <span class="inner-box2" style="--i:7;" onclick="OnClickFun('mypic.jpg')"><span></span><span></span><span></span><span></span><img src="img/python.jpg"></span>
-            <span class="inner-box2" style="--i:8;" onclick="OnClickFun('mypic.jpg')"><span></span><span></span><span></span><span></span><img src="img/react.jpg"></span> -->
-        </div>
-    </div>
-    <div class="contact-head">
-        <h1>Feel free to contact me from my social media accounts given below!.</h1>
-    </div>
-    <div class="contacts">
-        <ul>
-            <li data-aos="flip-right" onclick="window.location.href='https://api.whatsapp.com/send?phone=919461233288';"><i class="fa fa-whatsapp"></i></li>
-            <li data-aos="flip-left" onclick="window.location.href='https://github.com/raghav2906';"><i class="fa fa-github"></i></li>
-            <li data-aos="flip-right" onclick="window.location.href='tel:+919352159265'"><i class="fa fa-phone"></i></li>
-            <li data-aos="flip-left" onclick="window.location.href='https://www.linkedin.com/in/raghav-agarwal-42b5971b1/' ;"><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
-            <li data-aos="flip-right" onclick="window.location.href='https://www.instagram.com/raghav_2906/' ;"><i class="fa fa-instagram"></i></li>
-        </ul>
-    </div>
-    <div class="floating-back">
-        <section></section>
-    </div>
-    <div class="footer">
-        <h1>Made With <span>❤</span> By Raghav Agarwal</h1>
-    </div>
+            
+        </footer>
+        <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <script src="./js/index.js">     </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            offset:400,
-            duration: 1000
-        });
+          
+          <!-- <script src="/Untitled-1.js"></script> -->
+          <script type="module">
+            import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+          
+            const swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop:true,
+      autoplay:{
+          delay:2500,
+          disableOnIteraction : false
+      }
+    })
+          </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset:400,
+                duration: 1000
+            });
+            
+          </script>
         
-      </script>
-</body>
+        
+
+        <script src="js/script.js"></script>
+       
+    </body>
 </html>
