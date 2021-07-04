@@ -24,7 +24,8 @@ function createSqaure(){
     square.style.top=Math.random() * innerHeight + 'px';
     var a
     a = Math.random() * innerWidth ;
-    while(a >1400){
+    let wd=innerWidth;
+    while(a >innerWidth-200){
         a=Math.random() * innerWidth;
     }
     square.style.left=a+'px';
@@ -46,7 +47,9 @@ function createCircle(){
     circle.style.top=Math.random() * innerHeight + 'px';
     var a;
     a=Math.random() * innerWidth;
-    while(a>1000){
+    let wd=innerWidth
+    console.log(wd-500)
+    while(a>wd-500){
         a=Math.random() * innerWidth;
     }
     circle.style.left = a + 'px';
