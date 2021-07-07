@@ -1,3 +1,7 @@
+$(window).on("load", function() {
+    $(".preloader").delay(2000).fadeOut(100);
+  });
+  
 var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
                 var currentScrollPos = window.pageYOffset;
@@ -8,6 +12,8 @@ var prevScrollpos = window.pageYOffset;
                 }
                 prevScrollpos = currentScrollPos;
 }
+
+
 
 const color=[
     '#2196f3',

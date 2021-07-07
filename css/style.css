@@ -8,11 +8,77 @@ body{
     justify-content: center;
     align-items: center;
     
+    min-width: 100vw;
     max-width: 100vw;
     min-height: 100vh;
     background-color:rgb(255, 255, 255);
     /* overflow-X: hidden; */
     left: 0;
+}
+.preloader{
+    top: 0;
+    position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141414;
+}
+.preloader div{
+    /* z-index: 99999; */
+    position: absolute;
+    min-width: 50px;
+    min-height: 50px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    transform: scale(2.0);
+    animation: loading 2.5s linear infinite;
+}
+.preloader ul{
+    list-style: none;
+    /* padding: 0; */
+    position: relative;
+    left: -18px;
+}
+
+.preloader ul li::before {
+    content: "\2022";
+    color:white;
+    display: inline-block;
+    width: 1em;
+    /* margin-left: -1em */
+}
+.preloader div:nth-child(2){
+    animation-delay:0.075s ;
+}
+
+.preloader div:nth-child(3){
+    animation-delay:0.15s ;
+}
+
+.preloader div:nth-child(4){
+    animation-delay:.225s ;
+}
+@keyframes loading {
+    0%{
+        transform: rotate(0deg) scale(2);
+    }
+    65%{
+        transform: rotate(470deg) scale(2);
+    }
+    74%{
+        transform: rotate(650deg) scale(2);
+    }
+    75%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(0);
+    }
+    
 }
 .glowing{
     position: relative;
